@@ -68,17 +68,17 @@ body {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
-  color: #03e9f4;
+  color: #FFD700;
   font-size: 16px;
   text-decoration: none;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   overflow: hidden;
   transition: .5s;
   margin-top: 40px;
   letter-spacing: 4px
 }
 
-.login-box a:hover {
+/* .login-box a:hover {
   background: #03e9f4;
   color: #fff;
   border-radius: 5px;
@@ -86,7 +86,7 @@ body {
     0 0 25px #03e9f4,
     0 0 50px #03e9f4,
     0 0 100px #03e9f4;
-}
+} */
 
 .login-box a span {
   position: absolute;
@@ -98,9 +98,10 @@ body {
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #03e9f4);
-  animation: btn-anim1 1s linear infinite;
-}
+  background: linear-gradient(90deg, transparent, #FFD700);
+  /*sicolocolinearinfiniteharáelbuclesinpararlecoloqué15vueltas*/
+  animation: btn-anim1 1s linear 15;
+} 
 
 @keyframes btn-anim1 {
   0% {
@@ -111,16 +112,17 @@ body {
   100% {
     left: 100%;
   }
-}
+} 
 
 .login-box a span:nth-child(2) {
   top: -100%;
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, #03e9f4);
-  animation: btn-anim2 1s linear infinite;
-  animation-delay: .25s
+  background: linear-gradient(180deg, transparent, #FFD700);
+  /*sicolocolinearinfiniteharáelbuclesinpararlecoloqué15vueltas*/
+  animation: btn-anim2 1s linear 15;
+  animation-delay: .25s;
 }
 
 @keyframes btn-anim2 {
@@ -139,9 +141,9 @@ body {
   right: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg, transparent, #03e9f4);
-  animation: btn-anim3 1s linear infinite;
-  animation-delay: .5s
+  background: linear-gradient(270deg, transparent, #FFD700);
+  animation: btn-anim3 1s linear 15;
+  animation-delay: .5s;
 }
 
 @keyframes btn-anim3 {
@@ -160,9 +162,9 @@ body {
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(360deg, transparent, #03e9f4);
-  animation: btn-anim4 1s linear infinite;
-  animation-delay: .75s
+  background: linear-gradient(360deg, transparent, #FFD700);
+  animation: btn-anim4 1s linear 15;
+  animation-delay: .75s;
 }
 
 @keyframes btn-anim4 {
@@ -174,4 +176,14 @@ body {
   100% {
     bottom: 100%;
   }
+}
+
+/* Agrega esta clase al botón cuando se haga clic */
+.clicked {
+  animation: btn-anim1 btn-anim2 btn-anim3 btn-anim4 1s forwards;
+  background: #FFD700;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #FFD700,    0 0 25px #FFD700,    0 0 50px #FFD700,    0 0 100px #FFD700;
+  -webkit-animation: btn-anim1 btn-anim2 btn-anim3 btn-anim4 1s forwards;
 }
