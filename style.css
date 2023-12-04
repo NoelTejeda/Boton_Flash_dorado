@@ -99,8 +99,7 @@ body {
   width: 100%;
   height: 2px;
   background: linear-gradient(90deg, transparent, #FFD700);
-  /*sicolocolinearinfiniteharáelbuclesinpararlecoloqué15vueltas*/
-  animation: btn-anim1 1s linear 15;
+  /*sicolocolinearinfiniteharáelbuclesinpararlecoloqué15vueltas*/animation: btn-anim1 1s linear 15;
 } 
 
 @keyframes btn-anim1 {
